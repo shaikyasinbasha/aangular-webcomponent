@@ -1,0 +1,17 @@
+
+<div class="register-form">
+    <div class="register-form-title">
+      <h3>Sing Up</h3>
+      <h5>It's Free and only takes a mints</h5>
+    </div>
+    
+    <div *ngFor="let field of formfields" class="form-control">
+        <div class="label"><label>{{field.label}}</label></div>
+        <app-input-wrapper [field]="field" (messageEvent)="receiveMessage($event)" ></app-input-wrapper>
+    </div>
+    <div>
+        <br/>
+        <a routerLink="/result"><button class="btn btn-primary signup-btn">Join Now</button></a>
+    </div>
+
+</div>

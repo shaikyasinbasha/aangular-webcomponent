@@ -1,0 +1,8 @@
+<div class="register-form">
+    <div class="register-form-title">
+        <h3>RESULT</h3>
+    </div>
+    <div *ngFor="let field of formfields" class="form-control">
+        <div class="label"><label>{{field.label}}</label>: <label><b>{{signupdata[field.name]}}</b></label></div>
+    </div>
+</div>
